@@ -536,9 +536,9 @@ def main():
                         help='Ignore any previously cached files.')
     args = parser.parse_args()
 
-    if os.getuid() != 0:
-        sys.exit('This command requires root (to install packages), so please '
-                 'run again with sudo or as root.')
+#    if os.getuid() != 0:
+#        sys.exit('This command requires root (to install packages), so please '
+#                 'run again with sudo or as root.')
 
     current_dir = os.getcwd()
     if os.path.expanduser("~") in current_dir:
